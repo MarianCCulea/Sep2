@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.View.FirstView">   <center>
+      <Pane prefHeight="619.0" prefWidth="611.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="1147.0" layoutY="664.0" mnemonicParsing="false" onAction="#submitButton" prefHeight="32.0" prefWidth="110.0" style="-fx-background-radius: 0;" text="Sumbit" />
+            <Label fx:id="errorLabel" alignment="CENTER" layoutX="84.0" layoutY="636.0" prefHeight="25.0" prefWidth="514.0" text="label" textFill="RED">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <TableView fx:id="table" layoutX="43.0" layoutY="100.0" prefHeight="536.0" prefWidth="596.0">
+              <columns>
+                <TableColumn fx:id="number" prefWidth="75.0" text="Number" />
+                <TableColumn fx:id="type" minWidth="0.0" prefWidth="260.0" text="Type" />
+                  <TableColumn fx:id="adults" prefWidth="133.0" text="Adults" />
+                  <TableColumn fx:id="price" prefWidth="127.0" text="Price per night" />
+              </columns>
+            </TableView>
+            <DatePicker fx:id="p1" layoutX="43.0" layoutY="55.0" />
+            <DatePicker fx:id="p2" layoutX="422.0" layoutY="55.0" />
+            <Label layoutX="107.0" layoutY="34.0" text="Check-in date" />
+            <Label layoutX="481.0" layoutY="34.0" text="Check-out date" />
+            <Button layoutX="696.0" layoutY="605.0" mnemonicParsing="false" onAction="#priceButton" prefHeight="32.0" prefWidth="110.0" style="-fx-background-radius: 0;" text="Check Price" />
+            <Label fx:id="priceLabel" layoutX="896.0" layoutY="610.0" text="price" />
+            <Button layoutX="39.0" layoutY="680.0" mnemonicParsing="false" onAction="#loginButton" prefHeight="31.0" prefWidth="68.0" style="-fx-background-radius: 0;" text="Login" />
+            <Button layoutX="647.0" layoutY="289.0" mnemonicParsing="false" onAction="#addButton" text="&gt;&gt;" />
+            <Button layoutX="647.0" layoutY="329.0" mnemonicParsing="false" onAction="#removeButton" text="&lt;&lt;" />
+            <TableView fx:id="table1" layoutX="696.0" layoutY="55.0" prefHeight="536.0" prefWidth="561.0">
+               <columns>
+                  <TableColumn fx:id="number1" prefWidth="75.0" text="Number" />
+                  <TableColumn fx:id="type1" minWidth="0.0" prefWidth="250.0" text="Type" />
+                  <TableColumn fx:id="adults1" prefWidth="108.0" text="Adults" />
+                  <TableColumn fx:id="price1" prefWidth="127.0" text="Price per night" />
+               </columns>
+            </TableView>
+            <Button layoutX="544.0" layoutY="648.0" mnemonicParsing="false" onAction="#updateList" text="Update List" />
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

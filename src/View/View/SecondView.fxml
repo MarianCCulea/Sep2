@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="411.0" prefWidth="615.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.View.SecondView">
+   <children>
+      <VBox prefHeight="134.0" prefWidth="619.0">
+         <children>
+            <Pane prefHeight="146.0" prefWidth="619.0">
+               <children>
+                  <Label fx:id="label" layoutX="14.0" layoutY="22.0" prefHeight="96.0" prefWidth="590.0" text="Label" />
+               </children></Pane>
+         </children>
+      </VBox>
+      <VBox prefHeight="240.0" prefWidth="619.0">
+         <children>
+            <Pane prefHeight="242.0" prefWidth="619.0">
+               <children>
+                  <Label layoutX="14.0" layoutY="36.0" prefHeight="38.0" prefWidth="131.0" text="Guest Full Name">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="89.0" prefHeight="25.0" prefWidth="98.0" text="Telephone">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="error" layoutX="14.0" layoutY="179.0" prefHeight="27.0" prefWidth="567.0" text="Error" textFill="#ff1212">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="name" layoutX="152.0" layoutY="43.0" prefHeight="31.0" prefWidth="446.0" />
+                  <TextField fx:id="phone" layoutX="152.0" layoutY="87.0" prefHeight="31.0" prefWidth="446.0" />
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+      <Pane prefHeight="63.0" prefWidth="619.0">
+         <children>
+            <Button layoutX="14.0" layoutY="5.0" mnemonicParsing="false" onAction="#cancelpressed" prefHeight="38.0" prefWidth="83.0" text="Cancel" />
+            <Button layoutX="518.0" layoutY="5.0" mnemonicParsing="false" onAction="#bookpressed" prefHeight="38.0" prefWidth="83.0" text="Book" />
+         </children>
+      </Pane>
+   </children>
+</VBox>
